@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Synergy | Articles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-dark: #020617;
+            --accent-cyan: #22d3ee;
+            --card-glass: rgba(30, 41, 59, 0.7);
+            --text-white: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+            overflow-x: hidden;
+        }
+
+        .bg-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            opacity: 0.4;
+            background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072');
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container { width: 85%; max-width: 900px; margin: auto; }
+        
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.4rem; font-weight: 800; text-decoration: none; color: white; }
+        .logo span { color: var(--accent-cyan); }
+        .nav-links { display: flex; list-style: none; gap: 25px; }
+        .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 0.85rem; font-weight: 600; transition: 0.3s; }
+        .nav-links a:hover { color: var(--accent-cyan); }
+
+        .page-header { padding: 80px 0 40px; text-align: center; }
+        .page-header h1 { font-size: 2.8rem; margin-bottom: 10px; text-shadow: 0 0 15px rgba(34, 211, 238, 0.2); }
+
+        .article-list { display: flex; flex-direction: column; gap: 25px; padding-bottom: 100px; }
+
+        .article-item {
+            background: var(--card-glass);
+            backdrop-filter: blur(10px);
+            padding: 35px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .article-item:hover {
+            transform: scale(1.02);
+            border-color: var(--accent-cyan);
+            box-shadow: 0 10px 30px rgba(34, 211, 238, 0.1);
+        }
+
+        .category-tag { 
+            display: inline-block;
+            color: var(--accent-cyan); 
+            font-size: 0.7rem; 
+            font-weight: 800; 
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            border: 1px solid var(--accent-cyan);
+            padding: 2px 10px;
+            border-radius: 4px;
+        }
+
+        .article-item h2 { margin-bottom: 12px; font-size: 1.6rem; }
+        .article-item p { color: #cbd5e1; font-size: 1rem; margin-bottom: 20px; line-height: 1.7; }
+        
+        .read-more { font-size: 0.9rem; font-weight: bold; color: var(--accent-cyan); text-decoration: none; }
+
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            padding: 50px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .student-name { font-size: 1.1rem; font-weight: bold; margin-bottom: 5px; }
+        .reg-no { color: var(--accent-cyan); font-family: 'Courier New', monospace; }
+        .project-tag { font-size: 0.8rem; color: #64748b; margin-top: 15px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-fixed"></div>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo"><i class="fas fa-satellite-dish"></i> TECH<span>SYNERGY</span></a>
+            <ul class="nav-links">
+                <!-- Updated links for articles page navigation -->
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="articles.html" style="color: var(--accent-cyan);">ARTICLES</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="page-header">
+            <h1>Resource Center</h1>
+            <p style="color: var(--text-dim);">Critical analysis and technical documentation.</p>
+        </section>
+
+        <main class="article-list">
+            <article class="article-item">
+                <div class="category-tag">Computing</div>
+                <h2>Principles of Programming in Python</h2>
+                <p>An exploration of foundational Python concepts including variables, data types, and control structures essential for modern ICT applications.</p>
+                <a href="#" class="read-more">Read Full Analysis →</a>
+            </article>
+
+            <article class="article-item">
+                <div class="category-tag">Legal Research</div>
+                <h2>Analysis of Oyat vs Uganda (1967)</h2>
+                <p>A detailed brief of the landmark case, focusing on the legal issues and the application of criminal law precedents in the Ugandan system.</p>
+                <a href="#" class="read-more">Read Full Analysis →</a>
+            </article>
+
+            <article class="article-item">
+                <div class="category-tag">Communication</div>
+                <h2>Information in the ICT Era</h2>
+                <p>Evaluating how communication skills and information theory intersect with computer science to drive digital business strategies.</p>
+                <a href="#" class="read-more">Read Full Analysis →</a>
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="student-name">MIHIGO VALLERIAN IVAN</div>
+            <div class="reg-no">Reg No: 23/U/MSD/0874/P</div>
+            <div class="project-tag">E-Business Project &copy; 2026</div>
+        </div>
+    </footer>
+
+</body>
+</html>

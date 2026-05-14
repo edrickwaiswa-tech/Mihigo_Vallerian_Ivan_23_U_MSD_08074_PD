@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Synergy | About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-dark: #020617;
+            --accent-cyan: #22d3ee;
+            --card-glass: rgba(30, 41, 59, 0.7);
+            --text-white: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+            overflow-x: hidden;
+        }
+
+        .bg-fixed {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.35;
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container { width: 85%; max-width: 900px; margin: auto; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.4rem; font-weight: 800; text-decoration: none; color: white; }
+        .logo span { color: var(--accent-cyan); }
+        .nav-links { display: flex; list-style: none; gap: 25px; }
+        .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 0.85rem; font-weight: 600; transition: 0.3s; }
+        .nav-links a:hover { color: var(--accent-cyan); }
+
+        .page-header { padding: 80px 0 40px; text-align: center; }
+        
+        .profile-section {
+            background: var(--card-glass);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+            margin-bottom: 40px;
+        }
+
+        .profile-section h2 { margin-bottom: 20px; color: var(--accent-cyan); }
+        
+        .timeline { margin-top: 30px; border-left: 2px solid var(--accent-cyan); padding-left: 20px; }
+        .timeline-item { margin-bottom: 30px; position: relative; }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -27px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-cyan);
+            border-radius: 50%;
+        }
+
+        .timeline-date { font-size: 0.8rem; color: var(--accent-cyan); font-weight: bold; }
+        .timeline-title { font-size: 1.2rem; font-weight: bold; margin: 5px 0; }
+        .timeline-desc { color: var(--text-dim); font-size: 0.95rem; }
+
+        .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+        .skill-tag {
+            background: rgba(34, 211, 238, 0.1);
+            color: var(--accent-cyan);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            border: 1px solid rgba(34, 211, 238, 0.3);
+        }
+
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            padding: 50px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .student-name { font-weight: bold; margin-bottom: 5px; }
+        .reg-no { color: var(--accent-cyan); font-family: 'Courier New', monospace; }
+        .project-tag { font-size: 0.8rem; color: #64748b; margin-top: 15px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-fixed"></div>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo"><i class="fas fa-satellite-dish"></i> TECH<span>SYNERGY</span></a>
+            <ul class="nav-links">
+                <!-- Updated links for full site navigation -->
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="articles.html">ARTICLES</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="about.html" style="color: var(--accent-cyan);">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="page-header">
+            <h1>Academic & Professional Journey</h1>
+            <p style="color: var(--text-dim);">Bridging the gap between Law and Technical Innovation.</p>
+        </section>
+
+        <main>
+            <div class="profile-section">
+                <h2>The Professional Bio</h2>
+                <p>I am a dedicated student pursuing a unique curriculum at the intersection of legal frameworks and computer science. My journey is defined by a passion for understanding the <strong>Principle of Legality</strong> while simultaneously mastering the <strong>Foundations of Python Programming</strong>.</p>
+                
+                <div class="skills-grid">
+                    <span class="skill-tag">Criminal Law</span>
+                    <span class="skill-tag">Python Development</span>
+                    <span class="skill-tag">ICT Policy</span>
+                    <span class="skill-tag">Legal Research</span>
+                    <span class="skill-tag">System Analysis</span>
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h2>Timeline</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">AUGUST 2025 - PRESENT</div>
+                        <div class="timeline-title">Communication Skills in Computer Science</div>
+                        <div class="timeline-desc">Developing the ability to bridge technical requirements with professional communication strategies in the ICT sector.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">JUNE 2025</div>
+                        <div class="timeline-title">Legal Research & Constitutional Law</div>
+                        <div class="timeline-desc">Conducted deep-dive analyses into landmark cases including <em>Uganda v Commissioner of Prisons Ex Parte Matovu</em> and <em>Shaw v DPP</em>.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">MAY 2025</div>
+                        <div class="timeline-title">Case Analysis Specialization</div>
+                        <div class="timeline-desc">Formalized structured summaries for landmark criminal law cases such as <em>Oyat v Uganda (1967)</em>.</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="student-name">MIHIGO VALLERIAN IVAN</div>
+            <div class="reg-no">Reg No: 23/U/MSD/0874/P</div>
+            <div class="project-tag">E-Business Project &copy; 2026</div>
+        </div>
+    </footer>
+
+</body>
+</html>
